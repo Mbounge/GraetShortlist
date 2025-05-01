@@ -68,10 +68,10 @@ BEST_DROPOUT2 = 0.17214600618183104
 # --- FastAPI & CORS Setup ---
 # !!! IMPORTANT: Replace with your actual frontend URL(s) for production !!!
 allowed_origins = [
-    "http://localhost:3000",        # Local dev frontend
-    "http://127.0.0.1:3000",       # Local dev frontend
-    "https://graet.ai", # Your deployed Vercel frontend URL
-    # Add any other origins (e.g., custom domains) if needed
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "https://www.graet.ai", # With www
+    "https://graet.ai",    # Without www
 ]
 
 app = FastAPI(title="Player Shortlist API")

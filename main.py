@@ -70,11 +70,14 @@ BEST_DROPOUT2 = 0.17214600618183104
 allowed_origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://www.graet.ai", # With www
-    "https://graet.ai",    # Without www
+    "https://www.graet.ai",
+    "https://graet.ai",    
+    "https://interactive-avatar-next-js-demo-git-master-mbounge-s-team.vercel.app"
+    "https://interactive-avatar-next-js-demo-hch93aeaf-mbounge-s-team.vercel.app"
 ]
 
 app = FastAPI(title="Player Shortlist API")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=allowed_origins, # Use the list

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.git
+.gitignore
+*.md
+# Explicitly ignore local data/model files - they are downloaded from GCS!
+*.pkl
+*.pth
+*.json

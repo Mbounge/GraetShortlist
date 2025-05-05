@@ -671,8 +671,8 @@ def generate_birth_year_shortlist(birth_year: int,
             }
             # Use the correct reference_df_global for mapping back original stats
             for target_col, source_col in recent_orig_cols_map.items():
-                 if source_col in reference_df_global.columns:
-                      ranked_pos_df[target_col] = ranked_pos_df.index.map(reference_df_global[source_col])
+                 if source_col in reference_df.columns:
+                      ranked_pos_df[target_col] = ranked_pos_df.index.map(reference_df[source_col])
                  else:
                       ranked_pos_df[target_col] = np.nan
             shortlists[pos_group] = ranked_pos_df;
